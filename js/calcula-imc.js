@@ -26,8 +26,8 @@ for(i=0; i<pacientes.length; i++){
         
     }
     if(pesoEhValido && alturaEhValida){
-        var imc = peso / (altura*altura);
-        tdImc.textContent = imc.toFixed(3);
+        var imc = calculaImc(peso, altura);
+        tdImc.textContent = imc;
     }
     else {
         tdImc.textContent = "Altura e/ou peso inválidos!"
@@ -35,3 +35,8 @@ for(i=0; i<pacientes.length; i++){
     }
 }
 
+function calculaImc(peso, altura){
+    var imc = 0;
+    imc = peso/(altura*altura);
+    return imc.toFixed(3);
+}
