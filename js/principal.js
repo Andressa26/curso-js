@@ -17,13 +17,13 @@ for(i=0; i<pacientes.length; i++){
 
     if(peso<=0 || peso>=1000){
         pesoEhValido = false;
-        console.log("Peso inválido!");
         tdPeso.textContent = "Peso inválido!";
+        //spaciente.style.backgroundColor = "lightcoral";
     }
     if(altura<=0 || altura>=3.0){
         alturaEhValida = false;
-        console.log("Altura inválida!");
         tdAltura.textContent = "Altura inválida!";
+        
     }
     if(pesoEhValido && alturaEhValida){
         var imc = peso / (altura*altura);
@@ -31,5 +31,6 @@ for(i=0; i<pacientes.length; i++){
     }
     else {
         tdImc.textContent = "Altura e/ou peso inválidos!"
+        paciente.classList.add("paciente-invalido")
     }
 }
