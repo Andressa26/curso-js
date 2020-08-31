@@ -143,3 +143,21 @@ button[disabled=disabled], button:disabled {
 	opacity: 0;
 	transition: 0.5s;
 }
+
+#filtrar-tabela{
+	margin: 5px 0 10px 0 ;
+	padding: 2px;
+	width: 200px;
+	height: 35x;
+	border: 1px solid #ccc;
+}
+
+#label-filtrar-tabela{
+	margin: 5px 0 10px 0 ;
+	padding: 2px;
+	display: inline;
+}
+
+.invisivel{
+	display: none;
+}
